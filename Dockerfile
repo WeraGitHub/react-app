@@ -5,7 +5,7 @@ FROM nginx:alpine
 COPY /build /usr/share/nginx/html
 
 # TODO: Document the app uses port 80
-EXPOSE [80]
+EXPOSE 80
 
 # The command to run in the container is the nginx executable with a couple of standard params
 CMD ["nginx", "-g", "daemon off;"]
